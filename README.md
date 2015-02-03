@@ -5,4 +5,4 @@ Reference: [Epiphany SDKをPCにインストールする](http://cellspe.matrix.
 Use [offical Ubuntu docker image](https://registry.hub.docker.com/_/ubuntu/) to build the cross compiler environment.
 
 ##How to use
-Just install [Docker](https://www.docker.com/) and `docker run -ti --rm philipz/epiphany_sdk`
+Just install [Docker](https://www.docker.com/) and `docker run -ti --rm -v /home/ubuntu/esdk:/root/projects philipz/epiphany_sdk`
