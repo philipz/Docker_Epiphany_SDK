@@ -22,4 +22,7 @@ RUN export EPIPHANY_HOME=$HOME/epiphany-sdk
 RUN ./build-toolchain.sh
 RUN ./build-epiphany-sdk.sh
 ADD setenv.sh /root/
+RUN mkdir /root/projects
+VOLUME /root/projects
+WORKDIR /root
 ENTRYPOINT /root/setenv.sh
