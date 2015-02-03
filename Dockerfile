@@ -21,3 +21,5 @@ RUN ./download-components.sh
 RUN export EPIPHANY_HOME=$HOME/epiphany-sdk
 RUN ./build-toolchain.sh
 RUN ./build-epiphany-sdk.sh
+ADD setenv.sh /root/
+ENTRYPOINT /root/setenv.sh
